@@ -1,0 +1,83 @@
+body{
+    /*   background:skyblue; */
+    }
+    
+    .half-container{
+      border:1px solid black;
+      display:flex;
+        align-items:center;
+        justify-content:center;
+      width:960px;
+      margin:0 auto;
+    }
+    
+    img{
+        max-width: 50%;
+        height: auto;
+    }
+    
+    .about{
+      width:30%;
+      margin:20px;
+      
+    }
+
+    #my-img{
+        width:320px;
+        height:568px;
+    }
+    
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 15px;
+    /*     transition: 0.4s; */
+      display:flex;
+      justify-content:center;
+    }
+
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+    
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+    
+    li{
+      font-size:24px;
+    /*   background:yellow; */
+      margin:15px;
+      list-style-type:none;
+      display:flex;
+      justify-content:center;
+    }
+    .social-media{
+      display:flex;
+      justify-content:space-around;
+      height:5%;
+      border:1px solid black;
+      flex-direction:row;
+    }
+    .sm{
+      background:none;
+      font-size:24px;
+    }
+    
+    .copyright{
+      height:7%;
+      border:1px solid black;
+       margin-top:1%;
+      display:flex;
+     justify-content:center;
+    }
+    
