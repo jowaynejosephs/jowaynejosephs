@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 body{
-    /*   background:skyblue; */
+    background:wheat;
     }
+
+    h1{
+        text-align:center;
+    }
+    h1,.menu-items{
+        font-family: 'Dancing Script', cursive;
+    }
+  
     
     .half-container{
       /* border:1px solid black; */
@@ -14,6 +23,7 @@ body{
     img{
         max-width: 50%;
         height: auto;
+        border-radius:20%;
     }
     
     .about{
@@ -35,7 +45,7 @@ body{
         width: 100%;
         /* border: none; */
         outline: none;
-        font-size: 15px;
+        font-size: 30px;
     /*     transition: 0.4s; */
       display:flex;
       justify-content:center;
@@ -79,5 +89,23 @@ body{
        margin-top:1%;
       display:flex;
      justify-content:center;
+    }
+
+
+    /*MEDIA QUERIES*/
+    @media only screen and (max-width: 600px) {
+body{
+    background:skyblue;
+}
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        #my-img{
+            width:320px;
+            height:568px;
+        }
     }
     
