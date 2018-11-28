@@ -136,9 +136,16 @@ h1{
             width:960px;
             margin:0 auto;
           }
-          .about{
-              width:400px;
-          }
+
+          .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+            /* border:1px solid black; */
+            width:200px;
+        }
+       
 
     }
     
