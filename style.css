@@ -104,7 +104,7 @@ body{
     /*MEDIA QUERIES*/
     @media only screen and (max-width: 600px) {
 body{
-    background:wheat;
+    background:whitesmoke;
 }
 h1{
     text-align:center;
