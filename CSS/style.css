@@ -1,4 +1,16 @@
 body {
-  background-color: red; }
+  background-color: white;
+}
 
-/*# sourceMappingURL=style.css.map */
+.navigation {
+  display: grid;
+  height: 100px;
+  width: 100%;
+  border: 1px solid black;
+  grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+  align-items: center;
+}
+
+.navigation li {
+  list-style: none;
+}
