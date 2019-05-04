@@ -147,8 +147,11 @@ aside {
 
 .portfolio {
   border: 1px solid black;
-  height: 400px;
-  margin-top: 20px; }
+  height: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px; }
 
 .testimonials {
   border: 1px solid black;
@@ -206,6 +209,15 @@ button {
     margin: 10px;
     font-size: 18px;
     border: 1px solid black;
-    width: 100%; } }
+    width: 100%; }
+
+  .portfolio {
+    border: 1px solid black;
+    height: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-items: center; } }
 
 /*# sourceMappingURL=style.css.map */

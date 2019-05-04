@@ -1,3 +1,5 @@
+
+
 .mySlides {
     display: none
 }
@@ -174,8 +176,11 @@ aside{
 //PORTFOLIO
 .portfolio{
     border:1px solid black;
-    height:400px;
+    height:auto;
     margin-top:20px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap:10px;
 }
 
 
@@ -247,5 +252,15 @@ button{
         font-size:18px;
         border:1px solid black;
         width:100%;
+    }
+
+    .portfolio{
+        border:1px solid black;
+        height:auto;
+        margin-top:20px;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-gap:10px;
+        justify-items:center;
     }
   }
