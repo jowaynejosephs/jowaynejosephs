@@ -180,11 +180,12 @@ aside p{
     margin-left:120px;
     margin-right:120px;
     font-size:18px;
-    /*border:1px solid black;*/
+    border:1px solid black;
     display:grid;
     align-items:center;
-    padding-right:100px;
-    /*width:400px;*/
+    justify-items:start;
+    /*padding-right:100px;*/
+    min-width:400px;
 }
 
 #about-img{
