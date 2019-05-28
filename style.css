@@ -161,6 +161,10 @@ aside {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
   grid-gap: 10px; }
+  .portfolio .portfolio-item {
+    transition: all .3s ease-in-out; }
+  .portfolio .portfolio-item:hover {
+    transform: scale(1.1); }
 
 .testimonials {
   border: 1px solid;
@@ -177,7 +181,7 @@ footer {
   align-items: center;
   grid-gap: 10px;
   /*background:skyblue;*/
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
   font-weight: 600; }
 
 .fab {
