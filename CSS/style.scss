@@ -3,7 +3,14 @@ $icon-size:36px;
 $icon-color:black;
 $generic-border:1px solid;
 
-
+.body-img{
+    height: 100%;
+    position:relative;
+    background:   url("images/example-4.jpg")no-repeat;
+    background-size: inherit;
+    background-position: center;
+    /*margin-left:100%;*/
+}
 
 * {
     box-sizing: border-box;
@@ -16,19 +23,30 @@ body{
     width:100%;
     max-width:1400px;
     margin:0 auto;
+    /*background-image: url('images/background.jpg');*/
+    background: linear-gradient(to bottom, rgba(184,225,252,1) 0%,rgba(169,210,243,1) 10%,rgba(144,186,228,1) 25%,rgba(144,188,234,1) 37%,rgba(144,191,240,1) 50%,rgba(107,168,229,1) 51%,rgba(162,218,245,1) 83%,rgba(189,243,253,1) 100%);
+    background-position: cover;
 }
 
 
 .mySlides {
-    display: none
-}
+    
+        width: 100%;
+        height: 300px;
+        min-height: 400px;
+        position: relative;
+        /*outline:1px dotted red;*/
+    }
+
 img {
     vertical-align: middle;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  /*max-width: 1000px;*/
+  max-width: 1400px;
+
   position: relative;
   margin: auto;
 }
@@ -176,7 +194,7 @@ aside{
 
 //PORTFOLIO
 .portfolio{
-    border:$generic-border;
+    /*border:$generic-border;*/
     height:auto;
     margin-top:20px;
     display:grid;
@@ -228,7 +246,7 @@ footer{
 @media screen and (max-width: 700px) {
     body {
       background-color: blue;
-      color: white;
+      color:black;
     }
 
     nav ul{
@@ -295,7 +313,7 @@ footer{
 @media screen and (max-width: 550px) {
     body {
       background-color:purple;
-      color: white;
+      color:black;
     }
 
     .portfolio{
