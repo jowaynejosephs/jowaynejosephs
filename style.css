@@ -120,7 +120,7 @@ nav ul {
   grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   max-width: 100%;
-  background: white; }
+  /*background:white;*/ }
   nav ul li {
     list-style-type: none;
     font-size: 18px;
