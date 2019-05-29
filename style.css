@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Parisienne&display=swap");
 .body-img {
   height: 100%;
   position: relative;
@@ -133,6 +134,9 @@ nav ul {
   nav ul a:hover {
     color: white;
     background: #9AC3EA; }
+
+#my-name {
+  font-family: 'Parisienne', cursive; }
 
 #about {
   text-align: center;

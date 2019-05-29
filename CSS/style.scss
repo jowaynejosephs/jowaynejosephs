@@ -17,6 +17,7 @@ $generic-border:1px solid;
 }
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
 
 body{
     font-family: 'PT Sans', sans-serif;
@@ -163,6 +164,10 @@ a{
         color:white;
         background:#9AC3EA;
     }
+}
+
+#my-name{
+    font-family: 'Parisienne', cursive;
 }
 
 
