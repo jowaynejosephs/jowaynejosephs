@@ -203,6 +203,7 @@ aside{
     grid-template-columns:1fr 1fr 1fr 1fr;
     justify-items:center;
     grid-gap:10px;
+    grid-row-gap:20px;
     .portfolio-item{
        
         transition: all .3s ease-in-out; 

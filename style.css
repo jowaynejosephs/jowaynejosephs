@@ -164,7 +164,8 @@ aside {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
-  grid-gap: 10px; }
+  grid-gap: 10px;
+  grid-row-gap: 20px; }
   .portfolio .portfolio-item {
     transition: all .3s ease-in-out; }
   .portfolio .portfolio-item:hover {
