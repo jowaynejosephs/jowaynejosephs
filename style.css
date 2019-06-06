@@ -187,7 +187,7 @@ footer {
   align-items: center;
   grid-gap: 10px;
   /*background:skyblue;*/
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
   font-weight: 600; }
 
 .fab {
