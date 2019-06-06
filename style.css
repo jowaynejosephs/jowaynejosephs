@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Parisienne&display=swap");
-.no-name {
-  border: 1px solid red;
-  display: none; }
-
 .body-img {
   height: 100%;
   position: relative;
