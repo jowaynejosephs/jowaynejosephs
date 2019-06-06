@@ -190,6 +190,7 @@ aside{
     align-items:center;
     justify-items:start;
     min-width:400px;
+    margin:10px;
 }
 }
 
@@ -278,14 +279,17 @@ footer{
         height:auto;
         margin-top:20px;
      justify-items:center;
-      border:$generic-border;
+      /*border:$generic-border;*/
       width:100%;
+      p{
+          margin:10px;
+      }
     }
 
  
 
     .portfolio{
-        border:$generic-border;
+        /*border:$generic-border;*/
         height:auto;
         margin-top:20px;
         display:grid;
@@ -301,14 +305,14 @@ footer{
   
   @media screen and (min-width:400px) and (max-width:900px){
     .portfolio{
-        border:$generic-border;
+        /*border:$generic-border;*/
         height:auto;
         margin-top:20px;
         display:grid;
         grid-template-columns:1fr 1fr;
         grid-gap:10px;
         justify-items:center;
-        background:red;
+        /*background:red;*/
     }
 }
 
@@ -317,7 +321,7 @@ footer{
         display:grid;
         grid-template-columns:1fr;
         grid-gap:20px;
-        border:$generic-border;
+        /*border:$generic-border;*/
         height:400px;
         height:auto;
         margin-top:20px;
@@ -328,26 +332,26 @@ footer{
 
 @media screen and (max-width: 550px) {
     body {
-      background-color:purple;
+      /*background-color:purple;*/
       color:black;
     }
 
     .portfolio{
-        border:$generic-border;
+        /*border:$generic-border;*/
         height:auto;
         margin-top:20px;
         display:grid;
         grid-template-columns:1fr;
         grid-gap:10px;
         justify-items:center;
-        background:red;
+        /*background:red;*/
     }
 
     aside{
         display:grid;
         grid-template-columns:1fr;
         grid-gap:20px;
-        border:$generic-border;
+        /*border:$generic-border;*/
         /*height:400px;*/
         height:auto;
         margin-top:20px;
@@ -357,10 +361,11 @@ footer{
     p{
         line-height:34px;
         font-size:1rem;
-        border:$generic-border;
+        /*border:$generic-border;*/
         display:grid;
         align-items:center;
         min-width:400px;
+        margin:10px;
     }
     }
 
@@ -372,7 +377,7 @@ footer{
 
 @media screen and (max-width: 325px) {
     body {
-      background-color:yellow;
+      /*background-color:yellow;*/
       color:black;
     }
 
@@ -384,7 +389,7 @@ footer{
         display:grid;
         grid-template-columns:1fr;
         grid-gap:20px;
-        border:$generic-border;
+        /*border:$generic-border;*/
         height:700px;
         height:auto;
         margin-top:20px;
@@ -394,7 +399,7 @@ footer{
         /*line-height:20px;*/
         font-size:.8em;
        max-width:40%;
-        margin:0;
+        margin:10px;
         height:500px;
         overflow:hidden;
         word-wrap:break-word;
