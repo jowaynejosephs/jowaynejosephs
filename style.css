@@ -16,7 +16,7 @@ body {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  /*background-image: url('images/background.jpg');*/
+  background-image: url("images/background.jpg");
   background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
   background-position: cover; }
 
@@ -188,7 +188,8 @@ footer {
   grid-gap: 10px;
   /*background:skyblue;*/
   grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  font-weight: 600; }
+  font-weight: 600;
+  padding: 20px; }
 
 .fab {
   font-size: 36px;
