@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
 *{
     margin:0;
     padding:0;
@@ -9,22 +11,19 @@ $icon-size:36px;
 $icon-color:black;
 $generic-border:1px solid;
 
-.body-img{
-    height: 100%;
-    position:relative;
-    background:   url("images/example-4.jpg")no-repeat;
-    background-size: inherit;
-    background-position: center;
-    /*margin-left:100%;*/
-}
+//MIXINS
+ @mixin aside{
+    display:grid;
+    height:auto;
+    margin-top:20px;
+ width:100%;
+ }
 
-* {
-    box-sizing: border-box;
-}
-
-@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
-
+ @mixin portfolio{
+     display:grid;
+     height:auto;
+     margin-top:20px;
+    }
 
 
 body{
@@ -34,7 +33,6 @@ body{
     margin:0 auto;
     background-image: url('images/background.jpg');
     background: linear-gradient(to right,#7f7fd5,#86a8e7,#91eae4);
-    
     background-position: cover;
 }
 
@@ -42,51 +40,50 @@ body{
 
 //NAVIGATION
 nav ul{
-    /*border:1px solid black;*/
     display:grid;
     grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap:10px;
    max-width:100%;
-  
-   /*background:white;*/
-   li{
+
+    li{
     list-style-type:none;
     font-size:18px;
     display:grid;
     align-items:center;
     justify-items:center;
    color:black;
-}
-a{
+   a{
     text-decoration:none;
     color:black;
-    }
-    a:hover{
+    &:hover{
         color:white;
         background:#9AC3EA;
-    }
+}
+}
+}
 }
 
 #my-name{
     font-family: 'Parisienne', cursive;
-   
+    font-size:60px;
+ 
 }
 
-#about{
+h3#about{
     text-align:center;
-    font-size:24px;
-    padding-top:30px;
+  margin-bottom:-60px;
+  margin-top:60px;
+  font-size:36px;
+  padding-bottom:20px;
 }
 
 
 aside{
-    display:grid;
+
+   @include aside();
     grid-template-columns:2fr 2fr;
-    height:auto;
-    margin-top:20px;
- justify-items:center;
- width:100%;
- p{
+    justify-items:center;
+    p{
     line-height:34px;
    font-size:1.3rem;
     display:grid;
@@ -100,22 +97,18 @@ aside{
 
 //PORTFOLIO
 .portfolio{
-    /*border:$generic-border;*/
-    height:auto;
-    margin-top:20px;
-    display:grid;
+    @include portfolio();
     grid-template-columns:1fr 1fr 1fr 1fr;
     justify-items:center;
     grid-gap:10px;
     grid-row-gap:20px;
+    padding:20px;
     .portfolio-item{
-       
-        transition: all .3s ease-in-out; 
-    }
-    .portfolio-item:hover{
+       transition: all .3s ease-in-out; 
+       &:hover{
         transform: scale(1.1); 
-    }
-  
+}
+}
 }
 
 
@@ -123,58 +116,43 @@ aside{
 footer{
     width:100%;
     height:50px;
-    /*border:1px solid black;*/
-    margin-bottom:10px;
+    margin-bottom:30px;
     display:grid;
     justify-content:center;
     align-items:center;
    grid-gap:10px;
-    /*background:skyblue;*/
     grid-template-columns:3fr 1fr 1fr 1fr 1fr 1fr 1fr;
     font-weight:600;
     padding:20px;
-}
-
-.fab{
-    font-size:$icon-size;
-    color:$icon-color;
+    .fab{
+        font-size:$icon-size;
+        color:$icon-color;
+    }
 }
 
 //MEDIA QUERIES
 /* On screens that are 700px wide or less, the background color is blue */
 @media screen and (max-width: 700px) {
-    body {
-      /*background-color: blue;*/
-      color:black;
-    }
+
 
     nav ul{
-        /*border:1px solid black;*/
-        display:grid;
-        grid-template-columns:1fr;
-        grid-gap:10px;
-      max-width:100%;
+     display:grid;
+    grid-template-columns:1fr;
+    grid-gap:10px;
+    max-width:100%;
     }
 
     aside{
-        display:grid;
+        @include aside();
         grid-template-columns:1fr;
         grid-gap:20px;
-        /*border:1px solid black;*/
-        height:auto;
-        margin-top:20px;
-     justify-items:center;
-      /*border:$generic-border;*/
-      width:100%;
+       justify-items:center;
       p{
           margin:10px;
       }
     }
 
- 
-
-    .portfolio{
-        /*border:$generic-border;*/
+ .portfolio{
         height:auto;
         margin-top:20px;
         display:grid;
@@ -187,63 +165,40 @@ footer{
   
   @media screen and (min-width:400px) and (max-width:900px){
     .portfolio{
-        /*border:$generic-border;*/
-        height:auto;
-        margin-top:20px;
-        display:grid;
+      @include portfolio();
         grid-template-columns:1fr 1fr;
         grid-gap:10px;
         justify-items:center;
-        /*background:red;*/
     }
 }
 
   @media screen and (max-width: 1002px){
     aside{
-        display:grid;
+       @include aside();
         grid-template-columns:1fr;
         grid-gap:20px;
-        /*border:$generic-border;*/
-        height:400px;
-        height:auto;
-        margin-top:20px;
-     justify-items:center;
-    width:100%;
-    }
+        justify-items:center;
+  }
 }
 
 @media screen and (max-width: 550px) {
-    body {
-      /*background-color:purple;*/
-      color:black;
-    }
-
-    .portfolio{
-        /*border:$generic-border;*/
-        height:auto;
-        margin-top:20px;
-        display:grid;
+ .portfolio{
+       
+@include portfolio();
         grid-template-columns:1fr;
         grid-gap:10px;
         justify-items:center;
-        /*background:red;*/
     }
 
     aside{
-        display:grid;
-        grid-template-columns:1fr;
-        grid-gap:20px;
-        /*border:$generic-border;*/
-        /*height:400px;*/
-        height:auto;
-        margin-top:20px;
+    @include aside();   
+    grid-template-columns:1fr;
+    grid-gap:20px;
      justify-items:start;
-   
-    width:100%;
+
     p{
         line-height:34px;
         font-size:1rem;
-        /*border:$generic-border;*/
         display:grid;
         align-items:center;
         min-width:400px;
@@ -254,27 +209,14 @@ footer{
 
 
 @media screen and (max-width: 325px) {
-    body {
-      /*background-color:yellow;*/
-      color:black;
-    }
-
-    main{
-        display:none;
-    }
-
-    aside{
-        display:grid;
+  aside{
+      @include aside();
         grid-template-columns:1fr;
         grid-gap:20px;
-        /*border:$generic-border;*/
-        height:700px;
-        height:auto;
-        margin-top:20px;
-     justify-items:start;
-    width:100%;
+        justify-items:start;
+
+ 
     p{
-        /*line-height:20px;*/
         font-size:.8em;
        max-width:40%;
         margin:10px;
