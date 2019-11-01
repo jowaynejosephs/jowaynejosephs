@@ -35,7 +35,8 @@ nav ul {
 
 #my-name {
   font-family: 'Parisienne', cursive;
-  font-size: 60px; }
+  font-size: 60px;
+  font-display: swap; }
 
 h3#about {
   text-align: center;
