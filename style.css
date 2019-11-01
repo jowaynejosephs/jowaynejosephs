@@ -11,7 +11,6 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   background-image: url("images/background.jpg");
-  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
   background-position: cover; }
 
 nav ul {
@@ -38,29 +37,26 @@ nav ul {
   font-size: 60px;
   /*font-display: swap;*/ }
 
-h3#about {
+#about {
   text-align: center;
-  margin-bottom: -60px;
-  margin-top: 60px;
   font-size: 36px;
-  padding-bottom: 20px; }
+  margin-top: 40px;
+  padding: 0; }
 
 aside {
-  display: grid;
-  height: auto;
-  margin-top: 20px;
-  width: 100%;
   grid-template-columns: 2fr 2fr;
-  justify-items: center; }
-  aside p {
-    line-height: 23px;
-    padding: 10px;
-    font-size: 1.3rem;
-    display: grid;
-    align-items: center;
-    justify-items: start;
-    min-width: 400px;
-    margin: 10px; }
+  line-height: 23px;
+  padding: 10px;
+  font-size: 1.3rem;
+  display: grid;
+  align-items: flex-start;
+  justify-items: start;
+  min-width: 400px;
+  margin: 10px; }
+
+.jo-img {
+  margin-top: -100px;
+  padding: 0; }
 
 .portfolio {
   display: grid;
@@ -100,10 +96,6 @@ footer {
     max-width: 100%; }
 
   aside {
-    display: grid;
-    height: auto;
-    margin-top: 20px;
-    width: 100%;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     justify-items: center; }
@@ -127,10 +119,6 @@ footer {
     justify-items: center; } }
 @media screen and (max-width: 1002px) {
   aside {
-    display: grid;
-    height: auto;
-    margin-top: 20px;
-    width: 100%;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     justify-items: center; } }
@@ -144,10 +132,6 @@ footer {
     justify-items: center; }
 
   aside {
-    display: grid;
-    height: auto;
-    margin-top: 20px;
-    width: 100%;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     justify-items: start; }
@@ -160,10 +144,6 @@ footer {
       margin: 10px; } }
 @media screen and (max-width: 325px) {
   aside {
-    display: grid;
-    height: auto;
-    margin-top: 20px;
-    width: 100%;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     justify-items: start; }

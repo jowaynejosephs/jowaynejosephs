@@ -12,12 +12,7 @@ $icon-color:black;
 $generic-border:1px solid;
 
 //MIXINS
- @mixin aside{
-    display:grid;
-    height:auto;
-    margin-top:20px;
- width:100%;
- }
+
 
  @mixin portfolio{
      display:grid;
@@ -32,7 +27,6 @@ body{
     max-width:1400px;
     margin:0 auto;
     background-image: url('images/background.jpg');
-    background: linear-gradient(to right,#7f7fd5,#86a8e7,#91eae4);
     background-position: cover;
 }
 
@@ -69,31 +63,32 @@ nav ul{
     /*font-display: swap;*/
 }
 
-h3#about{
+#about{
     text-align:center;
-  margin-bottom:-60px;
-  margin-top:60px;
   font-size:36px;
-  padding-bottom:20px;
+  margin-top:40px;
+  padding:0;
 }
 
 
 aside{
-
-   @include aside();
-    grid-template-columns:2fr 2fr;
-    justify-items:center;
-    p{
+   grid-template-columns:2fr 2fr;
     line-height:23px;
     padding:10px;
    font-size:1.3rem;
     display:grid;
-    align-items:center;
+    align-items:flex-start;
     justify-items:start;
     min-width:400px;
     margin:10px;
 }
+
+.jo-img{
+    margin-top:-100px;
+    padding:0;
 }
+
+
 
 
 //PORTFOLIO
@@ -144,8 +139,7 @@ footer{
     }
 
     aside{
-        @include aside();
-        grid-template-columns:1fr;
+      grid-template-columns:1fr;
         grid-gap:20px;
        justify-items:center;
       p{
@@ -175,7 +169,6 @@ footer{
 
   @media screen and (max-width: 1002px){
     aside{
-       @include aside();
         grid-template-columns:1fr;
         grid-gap:20px;
         justify-items:center;
@@ -192,7 +185,6 @@ footer{
     }
 
     aside{
-    @include aside();   
     grid-template-columns:1fr;
     grid-gap:20px;
      justify-items:start;
@@ -211,7 +203,7 @@ footer{
 
 @media screen and (max-width: 325px) {
   aside{
-      @include aside();
+      
         grid-template-columns:1fr;
         grid-gap:20px;
         justify-items:start;
