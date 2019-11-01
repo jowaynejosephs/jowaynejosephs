@@ -66,7 +66,7 @@ nav ul{
 #my-name{
     font-family: 'Parisienne', cursive;
     font-size:60px;
-    font-display: swap;
+    /*font-display: swap;*/
 }
 
 h3#about{
@@ -84,7 +84,8 @@ aside{
     grid-template-columns:2fr 2fr;
     justify-items:center;
     p{
-    line-height:34px;
+    line-height:23px;
+    padding:10px;
    font-size:1.3rem;
     display:grid;
     align-items:center;
