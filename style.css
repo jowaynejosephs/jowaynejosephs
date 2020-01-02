@@ -10,8 +10,8 @@ body {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  background-image: url("images/background.jpg");
-  background-position: cover; }
+  /*background-image: url('images/background.jpg');*/
+  /*background-position: cover;*/ }
 
 nav ul {
   display: grid;
