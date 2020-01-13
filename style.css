@@ -5,10 +5,14 @@
   padding: 0;
   box-sizing: border-box; }
 
+body, html {
+  height: 100%;
+  margin: 0; }
+
 body {
   font-family: 'PT Sans', sans-serif;
   width: 100%;
-  max-width: 1400px;
+  /*max-width:1400px;*/
   margin: 0 auto;
   /*background-image: url('images/background.jpg');*/
   /*background-position: cover;*/ }
