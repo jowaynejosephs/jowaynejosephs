@@ -48,7 +48,7 @@ nav ul {
   padding: 0; }
 
 aside {
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 2fr 4fr;
   padding: 10px;
   font-size: 1.3rem;
   display: grid;
@@ -56,15 +56,56 @@ aside {
   justify-items: start;
   min-width: 400px;
   margin: 10px;
-  /*border:1px solid black;*/ }
-  aside p {
-    /*border:1px solid red;*/
-    padding: 30px;
-    margin-right: 30px;
-    line-height: 25px;
-    background: grey;
-    color: white;
-    border-radius: 2%; }
+  /*border:1px solid black;*/
+  /*p{
+      border:1px solid red;
+      padding:30px;
+      margin-right:30px;
+      line-height:25px;
+      background:grey;
+      color:white;
+      border-radius:2%;
+  }*/ }
+  aside .accordion-container {
+    margin-bottom: 15px;
+    /*border:1px solid black;*/ }
+
+.accordion-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center; }
+
+.myAccordion {
+  height: 10%;
+  /*border:1px solid red;*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.active, .accordion:hover {
+  background-color: #E6B129; }
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white; }
+  .panel p {
+    font-size: 15px; }
 
 .jo-img {
   margin-top: -100px;
@@ -84,6 +125,21 @@ aside {
     .portfolio .portfolio-item:hover {
       transform: scale(1.1); }
 
+.contact-writing {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /*border:1px solid black;*/ }
+  .contact-writing .contact {
+    /*border:1px solid red;*/
+    display: flex;
+    /*justify-content:center;*/
+    flex-direction: wrap; }
+
+.myWritings a {
+  text-decoration: none;
+  color: black; }
+
 footer {
   width: 100%;
   height: 50px;
@@ -101,6 +157,13 @@ footer {
 
 /* On screens that are 700px wide or less, the background color is blue */
 @media screen and (max-width: 700px) {
+  .contact-writing {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+    /*background:blue;*/ }
+
   nav ul {
     display: grid;
     grid-template-columns: 1fr;

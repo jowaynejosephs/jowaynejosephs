@@ -36,8 +36,7 @@
   <meta name="twitter:card" content="summary" />
 
   <meta property="og:locale" content="en_US" />
-  <meta property="og:image" content="images/me_twitter.png" />
-  <meta name="twitter:image" content="images/me_twitter.png" />
+  <meta name="twitter:image" content="images/https://twitter.com/jojosephs1992/photo" />
   <meta name="twitter:title" content="Jo Josephs| Jo-Wayne Josephs-Personal Website" />
   <meta name="twitter:creator" content="@jojosephs1992" />
   <meta name="twitter:site" content="@jojosephs1992" />
@@ -79,7 +78,7 @@
             <img src="images/me.png" alt="An image of Jo Josephs" class="jo-img">
       </picture>
       <!--<img src="images/me.png" alt="An image of Jo Josephs">-->
-      <p>Hello World! My name is Jo, a self-taught front-end web developer.
+      <!--<p>Hello World! My name is Jo, a self-taught front-end web developer.
         <br> My interest in development stemmed from an internship experience where I saw a volunteer changing an html span tag.
         I thought to myself "Why can't I do that?". So I went home and started learning HTML. I was a junior in college at
         the time, majoring in Political Economy, and it was too late to change my major to Computer Science. Plus, I really
@@ -88,7 +87,7 @@
         Full Stack Web development by learning C# and full stack Javascript. In my spare time I enjoy playing tennis, pool
         and lounging by the Boise River in beautiful Idaho. In the near future, I hope to build tools and provide resources
         for underrepresented groups in tech, particularly immigrants.
-        </p>
+        </p>-->
 
       <!--<p>I am a technologist who is adept at working at the intersection of business, design and technology.
         While my academic background lies in the realm of Political Economy, my professional experience has encompassed
@@ -96,12 +95,36 @@
         Product Manager 
       </p>-->
 
-<template>
+      <div class="accordion-container">
+<button class="accordion">Who am I</button>
+<div class="panel">
+  <p>
+    My name is Jo, and I am professional living and working in the Boise area. 
+    My academic background lies in the field of Economics, but my professional life has been centered
+    in the areas of web development and customer service. I work in the intersection of business, technology
+    and design. In my current role as the Lead Technology Support Administrator at National
+    GeneraL Insurance, I manage and maintain the retail websites for health insurance brokers. 
+    Currently, this stands at almost 1000 active websites. In order to effectively carry out my role I use
+    front-end web technologies and SEO best practices on customer websites.
+
+    
+  </p>
+</div>
+
+<button class="accordion">Technical Skills and Abilities</button>
+<div class="panel myAccordion">
+  <i class="fab fa-html5" style="font-size:100px; color:orange;padding:10px;"></i>
+  <i class="fab fa-css3-alt" style="font-size:100px; color:blue; padding:10px"></i>
+  <i class="fab fa-bootstrap" style="font-size:100px; color:purple; padding:10px "></i>
+  <i class="fab fa-sass" style="font-size:100px; color:#15AABF; padding:10px"></i>
+  <i class="fab fa-js-square" style="font-size:100px; color:gold;padding:10px "></i>
+  <i class="fab fa-wordpress" style="font-size:100px; color:#82C91E;padding:10px "></i>
+  <i class="fab fa-phone-alt" style="font-size:100px; color:black; padding:10px"></i>
+</div>
 
 
 
-</template>
-
+</div>
         
 </aside>
 
@@ -141,13 +164,24 @@
         <img src="images/rock-paper-scissors-resized.png" class="portfolio-item" style="border:2px solid black" alt="A preview of rock paper scissors project">
       </a>
 
-    </div>
+    </div><br><br>
 
 
-    <!--SPEAKING-->
+    <!--Contact and Writing-->
+<!--<div class="contact-writing">
+  <div class="writing">
+<h1 style="text-align:center">Recent Writings</h1>
+<a href="https://dev.to/jo_josephs/about-codeland-2oge" style="margin-left:20px" class="myWritings">CodeLand Conf Experience</a>
 
+  </div>
+ 
+  <div class="contact">
+   <h1></h1>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeXAvhrNvwW10-ooDzJUoIBtKoZXHh-JlWqRWsaGcmD6rQy3A/viewform?embedded=true" width="400" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+</div>-->
 
-    <!--END SPEAKING-->
+    <!--END Contact-->
 
 
     <h3 id="social-link" style="text-align:center; padding:30px;font-size:24px;">Find Me on the Interwebs</h3>
@@ -182,7 +216,23 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+const acc = document.getElementsByClassName("accordion");
+//let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+  </script
+    
 </body>
 
 </html>
