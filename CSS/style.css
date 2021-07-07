@@ -64,7 +64,6 @@ nav ul li a:hover {
 }
 
 aside {
-  border: 1px solid red;
   padding: 10px;
   font-size: 1.3rem;
   display: grid;
@@ -75,7 +74,6 @@ aside {
 }
 
 .about-content {
-  border: 1px solid black;
   max-width: 100%;
   margin: 30px;
   padding: 100px;
